@@ -40,6 +40,33 @@ def rick():
     
 
 
+def catchphrase():
+    print("The main Rick and Morty what we follow are from universe C - _ _ _ ")
+    answer = int(input("Fill in the blanks C - _ _ _ : "))
+    correct_answer = int("137")
+
+
+    if answer == correct_answer:
+        print("Correct! It's C-137")
+        return 1
+    elif answer != correct_answer:
+        print("Incorrect!...Jerry")
+        return 0
+    
+
+def rickbusiness():
+    print("How many years was rick away from his family?")
+    answer = int(input("Enter a number of years 0 - ∞ "))
+    correct_answer = int("14")
+
+
+    if answer == correct_answer:
+        print("Correct! It's 14 years!")
+        return 1
+    elif answer != correct_answer:
+        print("Still incorrect!......Jerry")
+        return 0
+
 
 
 # 
@@ -81,6 +108,15 @@ print("")
 print("")
 print("")
 rick()
+print("")
+print("")
+print("")
+catchphrase()
+print("")
+print("")
+print("")
+rickbusiness()
+
 
 
 # total _score = 0
