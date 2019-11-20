@@ -1,11 +1,11 @@
 print("Welcome to the Quiz")
-print("Youll will have 6 question...answer correctly to move on to the next level!")
+print("Youll will have 5 question...answer correctly to move on to the next level!")
 
 
 
 
 def state():
-    print("    What is the a rough estimate of the population of New York City? ")
+    print("  What is the a rough estimate of the population of New York City? ")
     print("a) 1 million")
     print("b) 3 million")
     print("c) 5 million")
@@ -55,8 +55,8 @@ def catchphrase():
     
 
 def rickbusiness():
-    print("How many years was rick away from his family?")
-    answer = int(input("Enter a number of years 0 - ∞ "))
+    print("How many years was Rick away from his family?")
+    answer = int(input("Enter a number of years 0 - ∞:  "))
     correct_answer = int("14")
 
 
@@ -68,62 +68,69 @@ def rickbusiness():
         return 0
 
 
-
-# 
- 
-# 
-
-# 
-# ")
-#    
-
-
-
-
+def morty():
+    print("Morty has never died on an andveture with Rick")
+    answer = int(input("Enter a 0 for False or a 1 for True to the question: "))
+    correct_answer = 1
+    if answer == correct_answer:
+        print("Correct!")
+        return 1    
+    elif answer != correct_answer:
+        print("Incorrect!")
+        return 0 
 
 
+# state()
+# print("")
+# print("")
+# print("")
+# rick()
+# print("")
+# print("")
+# print("")
+# catchphrase()
+# print("")
+# print("")
+# print("")
+# rickbusiness()
+# print("")
+# print("")
+# print("")
+# morty()
 
 
 
-
-# Alaska1 = 0
-
-# Alaska2 = 1
-
-
-# def Union():
-#     '''ask a true or false question!'''
-#     answer = int(input("Enter a 0 for false or a 1 for True to the question: "))
-#     correct_answer = 0
-#     if answer == correct_answer:
-#         print("Correct!")
-#         return 1    
-#     elif answer != correct_answer:
-#         print("Incorrect!")
-#         return 0 
-
-
-state()
+total_score = 0
+r1 = state()
 print("")
 print("")
 print("")
-rick()
+r2 = rick()
 print("")
 print("")
 print("")
-catchphrase()
+r3 = catchphrase()
 print("")
 print("")
 print("")
-rickbusiness()
+r4 = rickbusiness()
+print("")
+print("")
+print("")
+r5 = morty()
+total_score += r1
+total_score += r2
+total_score += r3
+total_score += r4
+total_score += r5
+print("")
+print("")
+print("")
+print("")
 
 
 
-# total _score = 0
-# result = function()
-# total_score += result
-# print(total_score)
-# `   `
+print(f"You scored {total_score} out of 5!")
 
 
 
